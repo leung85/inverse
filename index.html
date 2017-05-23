@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>inverse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#d3d3d3">
+  <meta name="description" content="A text game - find the inverse of a word" />
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="./static/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="./static/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="./static/manifest.json">
+  <link rel="mask-icon" href="./static/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <!--<link href="//fonts.googleapis.com/css?family=Gloria+Hallelujah|Dancing+Script|Handlee|Indie+Flower|Molle:400i|Pacifico|Shadows+Into+Light|Yellowtail"
+    rel="stylesheet">
+  <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+  <style>
+    html body {
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      overflow: hidden;
+      font-family: 'Gloria Hallelujah', cursive;
+      user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+
+    details.credit {
+      position: absolute;
+      bottom: 0px;
+      /* float: left; */
+      margin: 16px;
+      text-align: left;
+      display: block;
+      font-size: 10px;
+    }
+
+    div.menu {
+      font-size: 1.5em;
+      cursor: pointer;
+      width: 200px;
+      margin: auto;
+      border-radius: 15px;
+    }
+
+    div.menu:hover {
+      border: 1px solid darkblue;
+    }
+
+    div.menu>.material-icons {
+      font-size: 1.2em;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      /* no underline */
+    }
+
+    .middle {
+      vertical-align: middle;
+    }
+
+  </style>
+</head>
+
+<body style="background: url('./static/notebook.jpg')">
+  <div id="app">
+    <h1 style="width: 200px; margin: 100px auto;">Loading . . .</h1>
+  </div>
+  <footer>
+    <details class="credit">
+      <summary>Created by Marcus Wong - mwkdeveloper@gmail.com</summary>
+      <p>-This game is inspired by wrong version of a book.</p>
+      <p>v1.0.13</p>
+    </details>
+  </footer>
+  <!-- built files will be auto injected -->
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('./sw.js').then(function (reg) {}).catch(function (err) {
+        console.log("No it didn't. This happened: ", err)
+      });
+    } else {
+      console.log('Service worker not supported');
+    }
+
+  </script>
+  <style>
+    @import url("//fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Molle:400i|Yellowtail");
+    @import url("//fonts.googleapis.com/icon?family=Material+Icons");
+
+  </style>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-98094456-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+
+</html>
