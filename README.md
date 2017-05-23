@@ -1,6 +1,6 @@
 # inverse
 
-> Inverse is a text game. Find the inverse of a text.
+> Inverse is a text game. Find the inverse of a text. It is a Progressive web app developed with Vue.js
 
 ## Build Setup
 
