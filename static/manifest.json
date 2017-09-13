@@ -1,5 +1,6 @@
 {
-	"name": "Inverse",
+	"name": "Text Inverse",
+	"short_name": "Inverse",
 	"icons": [
 		{
 			"src": "./icons/android-chrome-192x192.png",
